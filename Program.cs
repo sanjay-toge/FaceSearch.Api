@@ -9,7 +9,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngular",
-        builder => builder.WithOrigins("http://localhost:4200", "https://face-search-9af1urwa5-sanjay-toges-projects.vercel.app", "https://face-search.vercel.app")
+        builder => builder.WithOrigins(
+                "http://localhost:4200",
+                "https://face-search-ui.vercel.app"
+            )
                           .AllowAnyMethod()
                           .AllowAnyHeader());
 });
@@ -20,6 +23,13 @@ builder.Services.AddDbContext<FaceSearch.Api.Data.AppDbContext>(options =>
     options.UseSqlite("Data Source=facesearch.db"));
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<FaceSearch.Api.Data.AppDbContext>();
+    db.Database.Migrate();
+}
+
 
 StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
 
