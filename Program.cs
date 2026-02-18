@@ -9,7 +9,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngular",
-        builder => builder.WithOrigins("http://localhost:4200")
+        builder => builder.WithOrigins("http://localhost:4200", "https://face-search-9af1urwa5-sanjay-toges-projects.vercel.app", "https://face-search.vercel.app")
                           .AllowAnyMethod()
                           .AllowAnyHeader());
 });

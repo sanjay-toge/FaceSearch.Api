@@ -1,0 +1,63 @@
+## .NET / ASP.NET Core
+
+# Build output
+bin/
+obj/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# VS Code
+.vscode/
+
+# Publish output
+publish/
+out/
+
+# Entity Framework migrations (keep Migrations/ folder but ignore snapshots if needed)
+# Uncomment the line below if you want to ignore EF snapshots
+# **/Migrations/*Snapshot.cs
+
+# SQLite databases (local dev databases)
+*.db
+*.db-shm
+*.db-wal
+
+# App secrets & sensitive config
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+*.pfx
+*.p12
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test results
+TestResults/
+coverage/
+*.trx
+*.coveragexml
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
