@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FaceSearch.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b214b5343c8c4c002ce5231a1a9c58ef3839619")]
 [assembly: System.Reflection.AssemblyProductAttribute("FaceSearch.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FaceSearch.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

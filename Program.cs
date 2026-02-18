@@ -24,11 +24,11 @@ var app = builder.Build();
 StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+// if (app.Environment.IsDevelopment())
+// {
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+// }
 
 app.UseHttpsRedirection();
 app.UseCors("AllowAngular");

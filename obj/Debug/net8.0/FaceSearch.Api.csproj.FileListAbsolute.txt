@@ -136,3 +136,4 @@
 /Users/sanjaytoge/Desktop/face-search/FaceSearch.Api/bin/Debug/net8.0/Stripe.net.dll
 /Users/sanjaytoge/Desktop/face-search/FaceSearch.Api/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
 /Users/sanjaytoge/Desktop/face-search/FaceSearch.Api/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+/Users/sanjaytoge/Desktop/face-search/FaceSearch.Api/obj/Debug/net8.0/FaceSearch.Api.sourcelink.json
