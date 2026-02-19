@@ -22,7 +22,7 @@ public class AiService
 
         form.Add(fileContent, "file", file.FileName);
 
-        var response = await _http.PostAsync("https://de82-2401-4900-1c30-30d7-70a1-9cca-fd8c-c27b.ngrok-free.app/search", form);
+        var response = await _http.PostAsync("https://8e1b-2401-4900-1c30-30d7-70a1-9cca-fd8c-c27b.ngrok-free.app/search", form);
         var content = await response.Content.ReadAsStringAsync();
 
         if (!response.IsSuccessStatusCode)
